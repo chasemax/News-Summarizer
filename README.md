@@ -29,7 +29,7 @@ Also included in the repo are two iterations of .ipynb we used to piecewise asse
 
 The tool first queries several of the top RSS feeds for cybersecurity news using the feedparser library. It then extracts the links from each of the articles it has received in the feed and fetches the actual web pages containing those articles. From each of those articles, it extracts the readable body text by identifying the p tags on those web pages. 
 
-The tool then extracts all of the proper nouns from each article that occur at least once and likely several times. It then compares each news source's top proper nouns to see which proper nouns appear across the most news sources, hopefully identifying the most important news topics of the day. It then summarizes all of the news article that contain those proper nouns by first performing extractive summarization, which identifies the top sentences in each
+The tool then extracts all of the proper nouns from each article that occur at least once and likely several times. It then compares each news source's top proper nouns to see which proper nouns appear across the most news sources, hopefully identifying the most important news topics of the day. It then summarizes all of the news articles that contain those proper nouns by first performing extractive summarization, which identifies the top sentences in each combined article, and then by performing abstractive summarization to slim down the extractive summary into something more coherent.
 
 ## Actual news summaries from the tool
 
